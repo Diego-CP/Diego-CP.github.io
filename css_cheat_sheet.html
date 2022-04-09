@@ -1,0 +1,216 @@
+<!-- Se pueden agregar todos los elementos estilisticos
+automaticamente, pero resulta dificil de mantener para
+toda la pagina -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ligamos este html al archivo css, usando tipo texto -->
+    <link href="../css/css_cheat_sheet.css"
+    type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Se le da un id al elemento para que solo se modifique este -->
+    <div id="container-1">
+        <h1>CSS Cheat Sheet</h1>
+    </div>
+
+    <div id="border-1">
+        <h2>Border</h2>
+        <p>
+            Agrega un espacio hacia afuera del elemento, como un marco.
+            Este contenedor tiene un borde de 20 pixeles. <br>
+            Tambien se puede marcar el borde con el modificador "solid".
+        </p>
+    </div>
+
+    <div>
+        <h2>Border-left</h2>
+        <p id="border-l">Agrega un espacio hacia la izquierda, como con este texto.</p>
+        <h2>Border-right</h2>
+        <p id="border-r">Agrega un espacio hacia la derecha, como con este texto.</p>
+        <h2>Border-top</h2>
+        <p id="border-t">Agrega un espacio hacia arriba, como con este texto.</p>
+        <h2>Border-bottom</h2>
+        <p id="border-b">Agrega un espacio hacia abajo, como con este texto.</p>
+    </div>
+
+    <div>
+        <h2>Border-radius</h2>
+        <p>Define el radio de las esquinas de un border.</p>
+        <p id = "border-rad1">Este texto tiene un border con un radio singular de 100px.</p>
+        <p id = "border-rad2">Este texto tiene un border con radios de 10% y 50%.</p>
+    </div>
+
+    <div id="image">
+        <h2>Background-image</h2>
+        <p>
+            Pone una imagen de fondo de un contenedor, dado su origen. Esta imagen se repite para llenar la página.<br>
+            Esto se puede ver ejemplificado por la imagen de pirámides de fondo.
+        </p>
+    </div>
+
+    <div>
+        <h2>Color</h2>
+        <p>Color va a determinar el color del texto. El color se puede definir con un nombre predefinido, hexadecimal o rgb.</p>
+        <p id="color1">Este</p>
+        <p id="color2">texto</p>
+        <p id="color3">tiene</p>
+        <p id="color4">varios</p>
+        <p id="color5">colores!</p>
+    </div>
+
+    <div>
+        <h2>Font</h2>
+        <p>Sirve como un modificador general, que puede cambiar cualquier cosa del estilo de texto.</p>
+        <p id="font1"> Cada uno </p>
+        <p id="font2"> de estos </p>
+        <p id="font3"> es un </p>
+        <p id="font4"> estilo diferente. </p>
+    </div>
+
+    <div>
+        <h2>Font-family</h2>
+        <p>
+            Define el estilo de fuente del texto. Se incluyen varios, si un font no sirve en algun buscador, se utiliza el siguiente
+        </p>
+        <p id="font-f">
+            Este texto tiene un font-family definido.
+        </p>
+    </div>
+
+    <div>
+        <h2>Font-stlye</h2>
+        <p>
+            Define modificadores al estilo de texto, como italicas o si hereda el estilo de su elemento padre.
+        </p>
+        <p id="font-s">
+            Este texto tiene un modificador para ser oblicuas.
+        </p>
+    </div>
+    
+    <div>
+        <h2>Font-weight</h2>
+        <p>
+            Define el "peso" del texto, es decir, que tan nergitas se ven las letras.
+        </p>
+        <p id="font-w1">
+            Este texto esta en negritas.
+        </p>
+        <p id="font-w2">
+            Este texto es mas ligero.
+        </p>
+    </div>
+
+    <div>
+        <h2>Width</h2>
+        <p>Modifica la anchura de un elemento.</p>
+        <p id="width">Este elemento tiene una anchura menor, medida en pixeles.</p>
+    </div>
+
+    <div>
+        <h2>Height</h2>
+        <p>Modifica la altura de un elemento.</p>
+        <p id="height">Este elemento de texto tiene una altura mayor, medida en cm.</p>
+    </div>
+
+    <div>
+        <h2>List-style</h2>
+        <p>
+            Sirve para modifcar los marcadores de las listas: su estilo, si son imagenes o si estan dentro o fuera de los elementos.
+        </p>
+        <ul id="list1">
+            <!-- Se le puede dar una clase a varios elementos para que sus
+            modificaciones se apliquen a todos -->
+            <li class="list-item">Los elementos</li>
+            <li class="list-item">de esta lista</li>
+            <li class="list-item">tienen marcadores</li>
+            <li class="list-item">cuadrados</li>
+            <li class="list-item">que estan</li>
+            <li class="list-item">fuera del</li>
+            <li class="list-item">elemento.</li>
+        </ul>
+
+        <ul id="list2">
+            <li class="list-item">Los elementos</li>
+            <li class="list-item">de esta lista</li>
+            <li class="list-item">tienen marcadores</li>
+            <li class="list-item">de numerales romanos</li>
+            <li class="list-item">que estan</li>
+            <li class="list-item">dentro del</li>
+            <li class="list-item">elemento.</li>
+        </ul>
+
+        <ul id="list3">
+            <li>Los marcadores</li>
+            <li>de esta lista</li>
+            <li>son imagenes.</li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Margin</h2>
+        <p>Agrega un espacio a los lados de un elemento.</p>
+        <p id="margin1">Si solo se especifica una medida, se aplica a todos los lados.</p>
+        <p id="margin2">Si se especifican dos numeros: se aplican vertical y horizontalmente en ese orden.</p>
+        <p id="margin3">Si se especifican cuatro numeros: se aplican a cada lado, comenzando por arriba y yendo en direccion del reloj.</p>
+    </div>
+
+    <div>
+        <h2>Padding</h2>
+        <p>Define el espacio entre el borde de un elemento y su contenido.</p>
+        <p id="padding1">La cantidad de distancia a cada lado en base a los numeros dados es la misma que con margin.</p>
+    </div>
+
+    <div>
+        <h2>Display</h2>
+        <p>
+            Sirve para determinar cómo se ordenan las cajas que se utilizan para un elemento. Esto puede ser varios en una linea, uno por 
+            linea, etc. Hay dos tipos principales: <br>
+            inline: Ordenar varios contenedores juntos, en una sola linea.<br>
+            bloque: Ordear los elementos que contiene detro de una linea. Esto puede ser solo un contenedor o varios inline.
+            El texto colorido en la seccion "Color" tiene un "inline" display para evitar la nueva linea con cada palabra, ya que 
+            el tag "p" tiene display de bloque automaticamente.
+        </p>
+    </div>
+
+    <div>
+        <h2>Overflow</h2>
+        <p>
+            Sirve para definir la conducta de un elemento cuando es demasiado grande para caber dentro de la ventana. Puede ser 
+            que el contenido excesivo se vuelva invisible, que aparezca un scrollbar o que pase a otra línea en el caso del texto.
+        </p>
+        <p>Ejemplo de scrollbar: </p>
+        <img id="overflow-s" alt="No se pudo cargar la imagen." src="../images/Wallpaper.jpg" width="1000"> 
+        <p id="overflow-s">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis consectetur fugiat nam doloribus corporis suscipit accusamus, deleniti neque hic esse, libero facilis iste ullam sed sequi, nesciunt asperiores tempora.</p>
+        <p>Ejemplo de que sea invisible: </p>
+        <img id="overflow-i" alt="No se pudo cargar la imagen." src="../images/Wallpaper.jpg" width="1000"> 
+        <p id="overflow-i">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis consectetur fugiat nam doloribus corporis suscipit accusamus, deleniti neque hic esse, libero facilis iste ullam sed sequi, nesciunt asperiores tempora.</p>
+    </div>
+
+    <div>
+        <h2>Position</h2>
+        <p>
+            Sirve para definir la posición de un elemento. Esto puede ser la posición normal (static), relativamente con esta posición 
+            normal (relative), fija a la página (fixed) o relativa a su elemento ancestro más cercano (absolute).
+        </p>
+        <p id="position-f">¡Este cuadro de texto siempre estará en la misma posición de la página! (ver Position)</p>
+        <p id="position-r">Este cuadro de texto siempre aparecerá a la derecha de su posición normal, incluso si sale de la ventana.</p>
+    </div>
+
+    <div>
+        <h2>Filter</h2>
+        <p>Sirve para definir efectos visuales, como brillo, contraste, invertir, opacidad, etc.</p>
+        <p>La siguiente imagen tiene algo de opacidad: </p>
+        <img id="filter-o" alt="No se pudo cargar la imagen." src="../images/Wallpaper.jpg" width="200"> 
+        <p>La siguiente imagen esta invertida: </p>
+        <img id="filter-i" alt="No se pudo cargar la imagen." src="../images/Wallpaper.jpg" width="200"> 
+        <p>La siguiente imagen se convirtió a blanco y negro: </p>
+        <img id="filter-s" alt="No se pudo cargar la imagen." src="../images/Wallpaper.jpg" width="200"> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!-- 
+    Esto es un comentario.
+
+    XML: Extensible Markup Language.
+    HTML: Hypertext Markup Language. XML pero con tags predefinidos.
+    Ambos utilizan tags para definir y delimitar un "elemento". Ej:
+        <body>...</body>
+    Los tags son como funciones: hay algunos predefinidos, pero se 
+    pueden definir para tener una funcion especifica.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definir el set de caracteres a usar, en este caso cualquier caracter de la red -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HTML Cheat Sheet</h1>
+    <h2>p - Párrafos</h2>
+    <p>
+        Todo se hace con elementos que se ponen dentro de un recuadro. Este simplemente agrega un recuadro de 
+        texto como este mismo.
+    </p>
+
+    <h2>h1 a h6 - Headers</h2>
+
+    <p>Se pueden hacer de Header 1 a 6, donde la diferencia es su tamaño. Estos se pueden ver abajo:</p>
+
+    <h1>Esto es un Header 1</h1> 
+    <h2>Esto es un Header 2</h2> 
+    <h3>Esto es un Header 3</h3> 
+    <h4>Esto es un Header 4</h4> 
+    <h5>Esto es un Header 5</h5> 
+    <h6>Esto es un Header 6</h6>
+
+    <div>
+        <h2>div - Divisiones</h2>
+        <p>
+            Sirve para delimitar un grupo de elementos juntos, donde se le pueden agregar elementos
+            estilísticos a todos los elementos que contiene usando css. Este texto está dentro de 
+            un div junto con el siguiente párrafo de texto.
+        </p>
+        <p>
+            Hola esto es un texto de ejemplo dentro del mismo div.
+        </p>
+    </div>
+    <header>
+        <h2>header - Header</h2>
+        <p>
+            Sirve para delimitar un grupo de elementos, como con Div, pero especializado como una
+            introducción para los siguientes elementos. Usualmente contiene ayuda para la navegación o listados.
+        </p>
+        <p>
+            Este es otro texto de ejemplo que está dentro del mismo header que el texto de arriba.
+        </p>
+    </header>
+    <span>
+        <h2>span - Span</h2>
+        <p>
+            Span es para representar a los elementos que tiene dentro. Si se le cambia algo a span, se aplica a 
+            los elementos que tiene dentro.
+        </p>
+        <p>
+            No estoy seguro de cómo representar cosas como esta sin textos de ejemplo como este, entonces aquí
+            va otro. 
+        </p>
+    </span>
+    <article>
+        <h2>article - Article</h2>
+        <p>
+            Articles sirven como una sección completamente encapsulada. No tiene repercusiones en otras
+            partes, por lo que es transferible y modificable completamente dentro de sí misma. Este texto
+            está dentro de un article.
+        </p>
+    </article>
+    <section>
+        <h2>section - Sección</h2>
+        <p>
+            Sirve para delimitar una sección genérica de un documento o aplicación. Es una agrupación temática
+            de contenido, por lo que section es otro contenedor.
+        </p>
+        <p>
+            Este segundo párrafo se encuentra dentro de la misma sección que el párrafo pasado.
+        </p>
+    </section>
+
+    <h2>strong - Strong</h2>
+    <strong>
+        <p>
+            Sirve para darle prioridad a su contenido. Sin embargo, no es un contenedor como div porque tiene
+            ciertas restricciones en los elementos que puede contener. Este cuadro de texto está dentro de un strong,
+            por lo que aparece en letras negritas.
+        </p>
+    </strong>
+
+    <h2>em - Enfasis</h2>
+    <em>
+        <p>
+            Es como strong: sirve para ponerle enfasis a sus contenidos, pero tiene ciertas
+            restricciones que no lo hacen un contenedor como tal. Este texto está dentro de un elemento em.
+        </p>
+    </em>
+
+    <h2>i - Italicas</h2>
+    <i>Sirve para representar texto en italicas, como este.</i>
+
+    <h2>u - Delineadas</h2>
+    <u>Sirve para representar texto delineado, como este.</u>
+
+    <h2>b - Negritas</h2>
+    <b>Sirve para representar texto en negritas, como este.</b>
+
+    <h2>Strike - Tachado</h2>
+    <!-- CAMBIAR -->
+    <p>Sirve para representar texto con una linea tachandolo, como este.</p>
+
+    <h2>small - Texto pequeno</h2>
+    <small>Sirve para representar texto en la misma fuente, pero pequeno como este.</small>
+
+    <h2>br - Break</h2>
+    <p>
+        Sirve para separar texto en <br>diferentes<br>líneas,<br>como<br>este.<br>
+        El tag br no requiere de un tag final /br porque no tiene un comienzo
+        ni un final.
+    </p>
+
+    <aside>
+        <h2>aside - Contenido secundario</h2>
+        <p>
+            Sirve para poner elementos que son secundarios, pero relacionados al contenido
+            de alrededor. Normalmente se utiliza para poner sidebars o cosas similares. Este 
+            texto y el subtítulo relacionado están dentro de un elemento aside.
+        </p>
+    </aside>
+
+    <nav>
+        <h2>nav - Links de navegación</h2>
+        <p>
+            Una sección con links de navegación que llevan a otras páginas o a otra parte de 
+            la misma página. Este texto y su subtítulo relacionado están dentro de una sección 
+            de navegación.
+        </p>
+    </nav>
+
+    <div>
+        <h2>Listas</h2>
+        <h3>ul - Listas sin orden</h3>
+        <p>
+            Los elementos en las listas desordenadas no tienen un orden determinado. Por esto se representan con
+            bullet points.
+            Cada elemento en una lista se define con el tag "li".
+        </p>
+        <ul>
+            <li>1</li>
+            <li>5</li>
+            <li>7</li>
+            <li>33</li>
+            <li>2</li>
+            <li>9</li>
+        </ul>
+        <h3>ol - Listas ordenadas</h3>
+        <p>
+            Los elementos en las listas ordenadas ya tienen un orden determinado. Por esto se representan numerados.
+        </p>
+        <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>5</li>
+            <li>7</li>
+            <li>9</li>
+            <li>33</li>
+        </ol>
+    </div>
+
+    <div>
+        <h2>table - Tablas</h2>
+        <p>Tambien se pueden hacer tablas. Se agrega con una linea de headers hasta arriba con el tag thead.</p>
+        <p>El tag tr representa una linea en una tabla, mientras que td representa un elemento dentro de esa linea.</p>
+        <table>
+            <thead>
+                <tr>H1</tr>
+                <tr>H2</tr>
+                <tr>H3</tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>22</td>
+                    <td>23</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>img - Imagenes</h2>
+        <p>
+            Sirven para poner un elemento visual en la pagina, com el que se ve abajo.
+            Tienen un tipo de tag diferente, en el que se agregan los atributos (como parametros). "alt" es 
+            lo que sale cuando no se puede cargar la imagen. "src" es la funete de la imagen relativa a este 
+            archivo. 
+        </p>
+        <img alt="No se pudo cargar la imagen." src="../images/SunClipart.png" width="200"> 
+    </div>
+
+    <div>
+        <h2> a - Links</h2>
+        <p>
+            Se pueden agregar hypelinks con el tag "a", los cuales hacen un enlace hacia otro recurso web. 
+            Se puede definir si se abre en una pesatana nueva o en la misma con el tag "Target". Un ejemplo
+            de un hyperlink se puede ver abajo.
+        </p>
+        <a href="html_link.html">Ir a pagina de link</a>
+    </div>
+
+    <div>
+        <h2>form - Forms</h2>
+        <p>Sirven para recibir entradas del usuario.</p>
+        <form>
+            <p>
+                El tag textarea es un cuadro de texto. "placeholder" Pone un texto por default que desaparece
+                cuando se agrega texto, como el "Introducir Texto" de abajo.
+            </p>
+            <textarea placeholder="Introducir texto"></textarea>
+
+            <p>El tag button es un boton</p>
+            <button>Boton inservible</button>
+
+            <p>
+                El tag input sirve para meter texto como entrada. El parametro "type" valida que esta entrada
+                sea de algun tipo. El espacio de abajo requiere de un email.
+            </p>
+            <input type="email">
+        </form>
+    </div>
+
+    <footer>
+        <h2>footer - Pie de página</h2>
+        <p>Utilizado para ponerle un pie de página al sitio. Este texto y su subtítulo son pies de página.</p>
+    </footer>
+   
+</body>
+</html>
