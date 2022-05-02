@@ -1,0 +1,33 @@
+body{
+    background-color: darkslategray;
+    overflow: hidden;
+}
+
+.contenedor{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-content: stretch;
+    grid-area: auto;
+}
+
+.c1 { 
+    grid-area: 1 / 1 / 2 / 5; 
+    background-color: yellow;
+}
+.c2 { 
+    grid-area: 4 / 1 / 5 / 5; 
+    background-color: blue;
+}
+.c3 { 
+    grid-area: 2 / 1 / 4 / 2; 
+    background-color: orange;
+}
+.c4 { 
+    grid-area: 2 / 2 / 4 / 5; 
+    background-color: darkolivegreen;
+}
